@@ -1,29 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Darynka Tapia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" > 
+    <title>Darynka Tapia</title>
+    <link rel="icon" type="iamge/ico" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-	<h1>Mis proyectos en GitHub</h1>
-	<h2>Esta pagina esta sin diseño temporalmente</h2>
-	<br>
-	<a href="https://darynka-tapia.github.io/hyperblog/blogpost.html">Hyperblog</a>
-	<p>Hyperblog es un proyecto creado con el fin de aprender Git y Github</p>
-	
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo.PNG" alt="">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Trabajemos juntos</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1 class="fadeIn">Hola! Soy <strong>Darynka Tapia</strong> 
+                Desarrollador <strong>PHP</strong> <small>  con pasión 
+                por nunca parar de <strong>aprender</strong></small>
+            </h1>
+            <img class="hero-image fadeInDown" src="images/perfil2.jpg" alt="Imagen de portada">     
+        </div>
+    </section>
+    <!--<section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3> 
+                    <h6 class="project-course">React Native/ React</h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 01(07/2018</small></p>
+                    <p class="project-url"><small><strong> Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/platzi-video-react-native.png" alt="" width="300">
+                </figure>
+            </article>
+        </div>
+    </section>-->
 
-	<a href="https://darynka-tapia.github.io/BrandGatitos">Brand gatitos</a>
-	<p>Proyecto creado con el curso de HTML y CSS en el cual se hace una landing page con conexion a un metodo de pago (Paypal)</p>
+    <div class="container">
+        <h2 class="project-list-title">Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
+    </div>
+    <section id="portafolio" class="project-list">
+        <div class="container">
+            <article class="project">
+                <figure class="project-imageContainer">
+                    <img class="project-image"  src="images/hyperblog.png" alt="Evento" width="500">
+                </figure>
+                <div class="project-detail">
+                    <h3 class="project-title">Hyperblog</h3>
+                    <h6 class="project-course">Git y Github</h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
+                    <p class="project-description">Un blog increible para el curso de Git y Github de Platzi</p>
+                    <a class="project-url" href="https://darynka-tapia.github.io/hyperblog/blogpost.html" target="_blank">Ver proyecto</a>
+                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1557-course/diploma/detalle/" target="_blank">Ver diploma</a>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-imageContainer">
+                    <img class="project-image"  src="images/gatitos.png" alt="Evento" width="500">
+                </figure>
+                <div class="project-detail">
+                    <h3 class="project-title">Brand gatitos</h3>
+                    <h6 class="project-course">HTML y CSS </h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
+                    <p class="project-description">Página web que se conecta con PayPal para realizar el proceso de pago de los productos ofrecidos.</p>
+                    <a class="project-url" href="https://darynka-tapia.github.io/BrandGatitos/" target="_blank">Ver proyecto</a>
+                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1492-html-css/diploma/detalle/" target="_blank">Ver diploma</a>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-imageContainer">
+                    <img class="project-image"  src="images/cloneGoogle.png" alt="Evento" width="500">
+                </figure>
+                <div class="project-detail">
+                    <h3 class="project-title">Google clone</h3>
+                    <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 26/02/2020</small></p>
+                    <p class="project-description">Clon del diseño de la página de Google</p>
+                    <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/curso/" target="_blank">Ver proyecto</a>
+                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1758-html-practico/diploma/detalle/" target="_blank">Ver diploma</a>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-imageContainer">
+                    <img class="project-image"  src="images/cloneWiki.png" alt="Evento" width="500">
+                </figure>
+                <div class="project-detail">
+                    <h3 class="project-title">Wiki clone</h3>
+                    <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 27/02/2020</small></p>
+                    <p class="project-description">Clon del diseño de la página de Wikipedia (reto)</p>
+                    <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/reto/" target="_blank">Ver proyecto</a>
+                </div>
+            </article>
+            
+            <article class="project">
+                <figure class="project-imageContainer">
+                    <img class="project-image"  src="images/portafolio.png" alt="Evento" width="500">
+                </figure>
+                <div class="project-detail">
+                    <h3 class="project-title">Portafolio</h3>
+                    <h6 class="project-course">Desarrollo web online</h6>
+                    <p class="project-date"><small><strong> Fecha:</strong> 04/03/2020</small></p>
+                    <p class="project-description">Portafolio de proyectos web</p>
+                    <a class="project-url" href="https://darynka-tapia.github.io/" target="_blank">Ver proyecto</a>
+                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1350-html5-css3/diploma/detalle/" target="_blank">Ver diploma</a>
+                </div>
+            </article>
+            
+        </div>
+        
+    </section>
 
-	<a href="https://darynka-tapia.github.io/proyecto2/curso/">Google clone</a>
-	<p>Este proyecto fue creado con el curso Practico de HTML y CSS en el cual se hace un clon del Fron-End del buscador Google</p>
+    <section class="mas-proyectos">
+        <div class="container">
+        </div>
+    </section>
+    
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h3>Más proyectos <a href="http://darynka-tapia.000webhostapp.com/" target="_blank">aquí</a> ♥ </h3>
 
-	<a href="https://darynka-tapia.github.io/proyecto2/reto/">Wiki clone</a>
-	<p>Wiki clone es el clon de la enciclopedia Wikipedia (https://www.wikipedia.org/), este proyecto fue creado como un reto del  curso Practico de HTML y CSS en el cual se hace un clon del Fron-End sin modo responsive por el momento.</p>
-
-	<a href="https://darynka-tapia.000webhostapp.com/">Más proyectos</a>
-	
-
-
+            <!--<form action="/suscripcion/" class="form-email">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email" class="email" disabled>
+                <input type="submit" value="Enviar" class="btn">
+            </form> -->
+            <div class="social">
+                <a href="https://twitter.com/darynka_tapia" class="social-link twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/darynka.tapiaa" class="social-link facebook" target="_blank"></a>
+                <a href="https://github.com/Darynka-Tapia/" class="social-link github" target="_blank"></a>
+                <a href="https://www.instagram.com/darynka.tapia/" class="social-link instagram" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de Desarrollo web online </p>
+            </div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfecto">Pixel perfecto</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        
+    </footer>
 </body>
 </html>

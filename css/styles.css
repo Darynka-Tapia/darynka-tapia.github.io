@@ -1,0 +1,293 @@
+/*
+reglas -> Conjunto de un selector selector y declaraciones
+selectores
+    - Selector de etiqueta (header - section - article - nav)
+    - Selector desendente (body header div nav ol {})
+    - Selector por id(#) o class (.)
+declaraciones 
+valores
+
+colores
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+existen tres formas para mostrar colores
+    - Palabras clave
+    - usando Hexadecimal o rgb(), rgba()
+    - Usando hls() hlsa()
+*/
+/* ------------------------- VARIABLES */
+:root{
+	--grisclaro-color:#1b2127;
+	--blue-color:#5c848e;
+	--crema-color:#dcd6f7;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Source Sans Pro' sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    line-height:1.5em;
+    letter-spacing: -0.2px;
+    color: white;
+    /*margin: 100px 300px 70px 30px ;*/
+    margin: 0;
+}
+
+.hero{
+    height: 300px;
+    background-color: var(--grisclaro-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+h1 strong, h2{
+    color: var(--blue-color);
+}
+h2{
+    color: var(--blue-color);
+    text-transform: uppercase;
+    font-family:'Source Sans Pro' sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.header{
+    background-color:  var(--grisclaro-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header ol, .header ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+.menu{
+    height: inherit;
+}
+
+.header figure{
+    margin: 0;
+    padding: 0;
+}
+.header figure img{
+width: 70px;
+height: 70px;
+padding-left: 10px;
+}
+
+
+footer{
+    background-color:  var(--grisclaro-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+/*
+.portfolio{
+    background-color: var(--crema-color);
+    padding: 20px;
+}
+.project{
+    border:1px solid gray;
+    border-radius: 10px;
+    margin:10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.project-details{
+    width: 500px;
+    margin: 0;
+}
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-course, 
+.project-date, 
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+.project strong{
+    font-family: 'Fjalla One', sans-serif;
+}*/
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project{
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--crema-color);
+    box-shadow: 2px 2px 2px 2px var(--blue-color);
+}
+.project-list-title{
+    margin-top: 30px;
+}
+.project img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+.project-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 2px 2px var(--blue-color);
+    border-radius: 5px;
+}
+.project-description{
+    text-align: left;
+    margin: 15px 0;
+}
+.project-url{
+    border: 1px solid var(--blue-color);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: var(--blue-color);
+    border-radius: 5px;
+}
+.project-url:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.contact{
+    background-color: var(--blue-color);
+    color: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contact a{
+    color: #fafafa;
+}
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+
+}
+.social-link.twitter{
+    background-image: url('../images/twitter.svg');
+}.social-link.facebook{
+    background-image: url('../images/facebook.svg');
+}.social-link.instagram{
+    background-image: url('../images/instagram.svg');
+}.social-link.github{
+    background-image: url('../images/github.svg');
+}
+
+
+.form-email .email{
+border-color: gray;
+border-radius: 5px;
+border-style: solid;
+padding: 10px 25px 10px 25px;
+background-image: url('../images/mail.svg');
+background-size: 15px 15px;
+background-repeat: no-repeat;
+background-position-y: center ;
+background-position-x: 5px;
+}
+.form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-email .btn{
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top:10px ;
+}
+
+.form-email h3{
+    font-family:'Source Sans Pro' sans-serif;
+
+}
+.mas-proyectos{
+    margin: 10px 0;
+}
+.mas-proyectos a{
+    color: var(--blue-color);
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+footer a{
+    color: white;
+}
