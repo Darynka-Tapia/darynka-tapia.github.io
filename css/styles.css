@@ -48,7 +48,7 @@ h1{
 }
 
 .hero{
-    height: 85vh;
+    height: 100vh;
     /*     background-color: var(--grisclaro-color);
     background-image:  url("../images/hero/bg1.jpg");
     background-size: cover;*/    
@@ -67,6 +67,7 @@ h1{
     left: 0px;
     opacity: 0.5;
     z-index: -2;
+    height: 115vh;
 }
 
 .hero .container img{
@@ -101,7 +102,7 @@ h2{
     text-transform: uppercase;
     font-family:'Source Sans Pro' sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
@@ -331,9 +332,34 @@ footer a{
 .skils{
     padding:50px;
     height: 100vh;
-    background-color: var(--grisdark-color);
+    background-color: var(--grisclaro-color);
     text-align: center;
+    /* background-image:  url("../images/skils/BGskils.png"); */
 }
+
+
+
 .skils h2{
     color: var(--crema-color);
+    margin-bottom: 40px;
+}
+.skils .habilidad {
+    display: flex;
+    width: 30%;
+    float: left;
+    margin: 5px 10px;
+
+}
+.skils .habilidad span{
+    color: var(--crema-color);
+    min-width: 120px;
+    text-align: end;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.skils .habilidad .el-progress{
+    width: 100%;
+}
+.el-progress-bar__innerText{
+    font-size: 16px !important;
 }

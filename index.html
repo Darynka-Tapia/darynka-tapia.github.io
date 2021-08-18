@@ -9,162 +9,272 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
+    <!-- import CSS element.io -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <figure class="logo">
-                <img src="images/logo.png" alt="">
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Trabajemos juntos</a>
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h1 class="fadeIn">Hola! Soy <strong>Darynka Tapia</strong> <br>
-                 - Desarrollador <strong>Web</strong> - <br> 
-                 <small> Con pasión por nunca parar de <strong>aprender</strong></small>
-            </h1>
-            <img class="hero-image fadeInDown" src="images/perfil2.jpg" alt="Imagen de portada">     
-        </div>
-    </section>
-    <!--<section id="portafolio" class="portfolio">
-        <div class="container">
-            <h2>Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Platzi Video</h3> 
-                    <h6 class="project-course">React Native/ React</h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 01(07/2018</small></p>
-                    <p class="project-url"><small><strong> Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" src="images/platzi-video-react-native.png" alt="" width="300">
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <figure class="logo">
+                    <img src="images/logo.png" alt="">
                 </figure>
-            </article>
-        </div>
-    </section>-->
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <h1 class="fadeIn">Hola! Soy <strong>Darynka Tapia</strong> <br>
+                    - Desarrollador <strong>Web</strong> - <br> 
+                    <small> Con pasión por nunca parar de <strong>aprender</strong></small>
+                </h1>
+                <img class="hero-image fadeInDown" src="images/perfil2.jpg" alt="Imagen de portada">     
+            </div>
+        </section>
+        <!--<section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2>Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">Platzi Video</h3> 
+                        <h6 class="project-course">React Native/ React</h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 01(07/2018</small></p>
+                        <p class="project-url"><small><strong> Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                        <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/platzi-video-react-native.png" alt="" width="300">
+                    </figure>
+                </article>
+            </div>
+        </section>-->
 
-    <div class="skils">
-        <h2>Mis Habilidades</h2>
-    </div>
-
-
-    <div class="container">
-        <h2 class="project-list-title">Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
-    </div>
-    <section id="portafolio" class="project-list">
-        <div class="container">
-            <article class="project">
-                <figure class="project-imageContainer">
-                    <img class="project-image"  src="images/hyperblog.png" alt="Evento" width="500">
-                </figure>
-                <div class="project-detail">
-                    <h3 class="project-title">Hyperblog</h3>
-                    <h6 class="project-course">Git y Github</h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
-                    <p class="project-description">Un blog increible para el curso de Git y Github de Platzi</p>
-                    <a class="project-url" href="https://darynka-tapia.github.io/hyperblog/blogpost.html" target="_blank">Ver proyecto</a>
-                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1557-course/diploma/detalle/" target="_blank">Ver diploma</a>
+        <div class="skils">
+            <h2>Mis Habilidades</h2>
+            <div style="width: 100%;">
+                <div class="habilidad" v-for="s in skils">
+                    <span>{{s.nombre}}</span>
+                    <el-progress 
+                        :text-inside="true" 
+                        :stroke-width="22" 
+                        :percentage="s.porcentaje" 
+                        style="margin-bottom:10px" 
+                        :format="format"
+                    ></el-progress>
                 </div>
-            </article>
-            <article class="project">
-                <figure class="project-imageContainer">
-                    <img class="project-image"  src="images/gatitos.png" alt="Evento" width="500">
-                </figure>
-                <div class="project-detail">
-                    <h3 class="project-title">Brand gatitos</h3>
-                    <h6 class="project-course">HTML y CSS </h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
-                    <p class="project-description">Página web que se conecta con PayPal para realizar el proceso de pago de los productos ofrecidos.</p>
-                    <a class="project-url" href="https://darynka-tapia.github.io/BrandGatitos/" target="_blank">Ver proyecto</a>
-                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1492-html-css/diploma/detalle/" target="_blank">Ver diploma</a>
-                </div>
-            </article>
-            <article class="project">
-                <figure class="project-imageContainer">
-                    <img class="project-image"  src="images/cloneGoogle.png" alt="Evento" width="500">
-                </figure>
-                <div class="project-detail">
-                    <h3 class="project-title">Google clone</h3>
-                    <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 26/02/2020</small></p>
-                    <p class="project-description">Clon del diseño de la página de Google</p>
-                    <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/curso/" target="_blank">Ver proyecto</a>
-                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1758-html-practico/diploma/detalle/" target="_blank">Ver diploma</a>
-                </div>
-            </article>
-            <article class="project">
-                <figure class="project-imageContainer">
-                    <img class="project-image"  src="images/cloneWiki.png" alt="Evento" width="500">
-                </figure>
-                <div class="project-detail">
-                    <h3 class="project-title">Wiki clone</h3>
-                    <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 27/02/2020</small></p>
-                    <p class="project-description">Clon del diseño de la página de Wikipedia (reto)</p>
-                    <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/reto/" target="_blank">Ver proyecto</a>
-                </div>
-            </article>
-            
-            <article class="project">
-                <figure class="project-imageContainer">
-                    <img class="project-image"  src="images/portafolio.png" alt="Evento" width="500">
-                </figure>
-                <div class="project-detail">
-                    <h3 class="project-title">Portafolio</h3>
-                    <h6 class="project-course">Desarrollo web online</h6>
-                    <p class="project-date"><small><strong> Fecha:</strong> 04/03/2020</small></p>
-                    <p class="project-description">Portafolio de proyectos web</p>
-                    <a class="project-url" href="https://darynka-tapia.github.io/" target="_blank">Ver proyecto</a>
-                    <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1350-html5-css3/diploma/detalle/" target="_blank">Ver diploma</a>
-                </div>
-            </article>
+            </div>
+            <div style="width: 100%;">
+                <img src="" alt="">
+            </div>
             
         </div>
+
+
+        <div class="container">
+            <h2 class="project-list-title">Portafolio ( <small>Proyectos creados con los cursos de <a href="https://www.platzi.com" target="_blank">Platzi</a> </small> )</h2>
+        </div>
+        <section id="portafolio" class="project-list">
+            <div class="container">
+                <article class="project">
+                    <figure class="project-imageContainer">
+                        <img class="project-image"  src="images/hyperblog.png" alt="Evento" width="500">
+                    </figure>
+                    <div class="project-detail">
+                        <h3 class="project-title">Hyperblog</h3>
+                        <h6 class="project-course">Git y Github</h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
+                        <p class="project-description">Un blog increible para el curso de Git y Github de Platzi</p>
+                        <a class="project-url" href="https://darynka-tapia.github.io/hyperblog/blogpost.html" target="_blank">Ver proyecto</a>
+                        <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1557-course/diploma/detalle/" target="_blank">Ver diploma</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <figure class="project-imageContainer">
+                        <img class="project-image"  src="images/gatitos.png" alt="Evento" width="500">
+                    </figure>
+                    <div class="project-detail">
+                        <h3 class="project-title">Brand gatitos</h3>
+                        <h6 class="project-course">HTML y CSS </h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 25/02/202020</small></p>
+                        <p class="project-description">Página web que se conecta con PayPal para realizar el proceso de pago de los productos ofrecidos.</p>
+                        <a class="project-url" href="https://darynka-tapia.github.io/BrandGatitos/" target="_blank">Ver proyecto</a>
+                        <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1492-html-css/diploma/detalle/" target="_blank">Ver diploma</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <figure class="project-imageContainer">
+                        <img class="project-image"  src="images/cloneGoogle.png" alt="Evento" width="500">
+                    </figure>
+                    <div class="project-detail">
+                        <h3 class="project-title">Google clone</h3>
+                        <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 26/02/2020</small></p>
+                        <p class="project-description">Clon del diseño de la página de Google</p>
+                        <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/curso/" target="_blank">Ver proyecto</a>
+                        <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1758-html-practico/diploma/detalle/" target="_blank">Ver diploma</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <figure class="project-imageContainer">
+                        <img class="project-image"  src="images/cloneWiki.png" alt="Evento" width="500">
+                    </figure>
+                    <div class="project-detail">
+                        <h3 class="project-title">Wiki clone</h3>
+                        <h6 class="project-course">Curso Práctico de HTML y CSS</h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 27/02/2020</small></p>
+                        <p class="project-description">Clon del diseño de la página de Wikipedia (reto)</p>
+                        <a class="project-url" href="https://darynka-tapia.github.io/proyecto2/reto/" target="_blank">Ver proyecto</a>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <figure class="project-imageContainer">
+                        <img class="project-image"  src="images/portafolio.png" alt="Evento" width="500">
+                    </figure>
+                    <div class="project-detail">
+                        <h3 class="project-title">Portafolio</h3>
+                        <h6 class="project-course">Desarrollo web online</h6>
+                        <p class="project-date"><small><strong> Fecha:</strong> 04/03/2020</small></p>
+                        <p class="project-description">Portafolio de proyectos web</p>
+                        <a class="project-url" href="https://darynka-tapia.github.io/" target="_blank">Ver proyecto</a>
+                        <a class="project-url diploma" href="https://platzi.com/@Darynka_Tapia/curso/1350-html5-css3/diploma/detalle/" target="_blank">Ver diploma</a>
+                    </div>
+                </article>
+                
+            </div>
+            
+        </section>
+
+        <section class="mas-proyectos">
+            <div class="container">
+            </div>
+        </section>
         
-    </section>
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h3>Más proyectos <a href="http://darynka-tapia.000webhostapp.com/" target="_blank">aquí</a> ♥ </h3>
 
-    <section class="mas-proyectos">
-        <div class="container">
-        </div>
-    </section>
+                <!--<form action="/suscripcion/" class="form-email">
+                    <h3>¿Creamos algo juntos?</h3>
+                    <input type="text" placeholder="Déjame tu email" id="email" class="email" disabled>
+                    <input type="submit" value="Enviar" class="btn">
+                </form> -->
+                <div class="social">
+                    <a href="https://twitter.com/darynka_tapia" class="social-link twitter" target="_blank"></a>
+                    <!-- <a href="https://www.facebook.com/darynka.tapiaa" class="social-link facebook" target="_blank"></a> -->
+                    <a href="https://github.com/Darynka-Tapia/" class="social-link github" target="_blank"></a>
+                    <!-- <a href="https://www.instagram.com/darynka.tapia/" class="social-link instagram" target="_blank"></a> -->
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <p>Curso de Desarrollo web online </p>
+                </div>
+                <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfecto">Pixel perfecto</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            </div>
+            
+        </footer>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
     
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h3>Más proyectos <a href="http://darynka-tapia.000webhostapp.com/" target="_blank">aquí</a> ♥ </h3>
+    <!-- import JavaScript element.io-->
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return { 
+                    visible: false, 
+                    message:"Hola Vue", 
+                    skils:[{
+                        nombre:'PHP', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Laravel', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Javascript', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'HTML', 
+                        porcentaje:100, 
+                        },{
+                        nombre:'Vue.js', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Wordpress', 
+                        porcentaje:25, 
+                        },{
+                        nombre:'Ajax', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'JQuery', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Axios', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Json', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Git', 
+                        porcentaje:25, 
+                        },{
+                        nombre:'Bootstrap', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'Bases de datos', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'MySQL', 
+                        porcentaje:55, 
+                        },{
+                        nombre:'SEO Técnico', 
+                        porcentaje:25, 
+                        }, {
+                        nombre:'Administración de proyectos', 
+                        porcentaje:25, 
+                        },{
+                        nombre:'Trello', 
+                        porcentaje:25, 
+                        },{
+                        nombre:'Notion', 
+                        porcentaje:25, 
+                        }
+                        
+                    ]
+                }
+            }, 
+            methods: {
+                format(percentage) {
+                    if(percentage === 100){
+                        return 'Avanzado'
+                    }
 
-            <!--<form action="/suscripcion/" class="form-email">
-                <h3>¿Creamos algo juntos?</h3>
-                <input type="text" placeholder="Déjame tu email" id="email" class="email" disabled>
-                <input type="submit" value="Enviar" class="btn">
-            </form> -->
-            <div class="social">
-                <a href="https://twitter.com/darynka_tapia" class="social-link twitter" target="_blank"></a>
-                <!-- <a href="https://www.facebook.com/darynka.tapiaa" class="social-link facebook" target="_blank"></a> -->
-                <a href="https://github.com/Darynka-Tapia/" class="social-link github" target="_blank"></a>
-                <!-- <a href="https://www.instagram.com/darynka.tapia/" class="social-link instagram" target="_blank"></a> -->
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div>
-                <p>Curso de Desarrollo web online </p>
-            </div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfecto">Pixel perfecto</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </div>
-        
-    </footer>
+                    if(percentage === 55){
+                        return 'Intermedio'
+                    }
+
+                    if(percentage === 25){
+                        return 'Básico'
+                    }
+                }
+            }
+        })
+    </script>
 </body>
 </html>
