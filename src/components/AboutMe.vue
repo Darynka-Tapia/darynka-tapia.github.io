@@ -18,11 +18,25 @@
                 </div>
             </div>
         </div>
-        <div class="about-me"> Darynka Tapia </div>
-        <div class="social-media"></div>
-        <div class="scrolling-icon"></div>
+        <div class="about-me">
+            <div class="card">
+                Darynka Tapia
+            </div>
+        </div>
+        <div class="social-media-container">
+            <div class="social-media">
+                <img src="@/components/icons/GitHub.svg" alt="">
+                <img src="@/components/icons/LinkedIn.svg" alt="">
+            </div>
+        </div>
+        <div class="scrolling-icon">
+            <the-scrolling />
+        </div>
     </div>
 </template>
+<script setup>
+    import theScrolling from "@/components/icons/scrolling.vue" 
+</script>
 
 <style scoped>
     .container-about{
@@ -123,18 +137,37 @@
         /* line-height: 64px; */
     }
     .about-me{
-        background-color:coral ;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .social-media{
-        background-color: crimson;
+    .about-me .card{
+        background-color: #866EC7;
+        width: 188px;
+        height: 288px;
+        border-bottom-right-radius: 40px;
+    }
+    .social-media-container{
         grid-column: 2 / 4;
         grid-row: 3 / 4;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .social-media-container .social-media {
+        display: flex;
+        gap: 4px;
+        padding: 4px 10px;
+        border-bottom: 3px solid #866EC7;
     }
     .scrolling-icon{
-        background-color: darkgray;
-        grid-column: 2 / 4;
+        grid-column: 2 / 3;
         grid-row: 4 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 </style>
