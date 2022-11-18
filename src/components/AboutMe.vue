@@ -20,7 +20,14 @@
         </div>
         <div class="about-me">
             <div class="card">
-                Darynka Tapia
+                <p class="seudoname">{ DTapia }</p>
+                <div class="title">
+                    <img src="@/components/icons/profile.svg" />
+                    <h1> Hello, <br/>I'm Darynka Tapia</h1>
+                </div>
+                <p class="subtitle">
+                    With a passion to never stop learning
+                </p>
             </div>
         </div>
         <div class="social-media-container">
@@ -40,7 +47,6 @@
 
 <style scoped>
     .container-about{
-        /* background-color: cadetblue; */
         width: 100vw;
         height: 100%;
         display: grid;
@@ -49,7 +55,6 @@
     }
 
     .side-left{
-        /* background-color: blue; */
         grid-row: 2 / 5;
         display: flex;
         justify-content: flex-end;
@@ -62,13 +67,12 @@
         background-color: #866EC7;
         width: 30px;
         height: 50px;
-        margin-left: -8px;
     }
     .side-left .circle-container{
         transform: rotate(180deg);
         width: 30px;
         height: 50px;
-        margin-left: -10px;
+        margin-left: -4px;
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -90,7 +94,6 @@
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        /* line-height: 64px; */
     }
     .side-right{
         grid-column: 3 / 4;
@@ -106,13 +109,12 @@
         background-color: #866EC7;
         width: 30px;
         height: 50px;
-        margin-right: -8px;
     }
     .side-right .circle-container{
         transform: rotate(180deg);
         width: 30px;
         height: 50px;
-        margin-right: -4px;
+        margin-right: 2px;
         display: flex;
         flex-direction: column;
         gap: 6px;
@@ -128,13 +130,11 @@
         background-color: #866EC7;
     }
     .side-right .text-left{
-        /*transform: rotate(180deg);*/
         white-space: nowrap;
         writing-mode: vertical-lr;
         font-style: normal;
         font-weight: 400;
         font-size: 40px;
-        /* line-height: 64px; */
     }
     .about-me{
         grid-column: 2 / 3;
@@ -148,6 +148,35 @@
         width: 188px;
         height: 288px;
         border-bottom-right-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .about-me .card .seudoname{
+        margin-bottom: 14px;
+    }
+
+    .about-me .card .title{
+        position: relative;
+    }
+    .about-me .card .title h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .about-me .card .subtitle{
+        text-align: end;
+        font-weight: 600;
+    }
+    .about-me .card .title img{
+        position: absolute;
+        top: -48px;
+        right: 0;
     }
     .social-media-container{
         grid-column: 2 / 4;
@@ -168,6 +197,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 </style>

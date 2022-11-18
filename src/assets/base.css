@@ -1,6 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Overpass:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
 
 :root {
   
@@ -10,14 +10,16 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: 'Baloo Bhai 2', cursive;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Baloo 2', cursive;
+
 }
 
 h1, h2, h3, h4, span, p, label {
   margin: 0;
 }
 
+body, 
+html,
 #app{
-  height: 100vh;
+  height: 100%;
 }
