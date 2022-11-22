@@ -45,7 +45,7 @@
     import theScrolling from "@/components/icons/scrolling.vue" 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .container-about{
         width: 100vw;
         height: 100%;
