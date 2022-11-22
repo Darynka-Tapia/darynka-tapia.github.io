@@ -47,94 +47,39 @@
 
 <style lang="scss" scoped>
     .container-about{
-        width: 100vw;
-        height: 100%;
-        display: grid;
+        @apply w-screen h-full grid;
         grid-template-columns: 64px 1fr 64px;
         grid-template-rows: 118px 1fr 100px 54px;
-    }
-
-    .side-left{
-        grid-row: 2 / 5;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        color: #866EC7;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .side-left .rectangle{
-        background-color: #866EC7;
-        width: 30px;
-        height: 50px;
-    }
-    .side-left .circle-container{
-        transform: rotate(180deg);
-        width: 30px;
-        height: 50px;
-        margin-left: -4px;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-    .side-left .circle-container .row{
-        display: flex;
-        gap: 4px;
-    }
-    .side-left .circle-container .row .circle{
-        width: 6px;
-        height: 6px;
-        border-radius: 50px;
-        background-color: #866EC7;
-    }
-    .side-left .text-left{
-        transform: rotate(180deg);
-        white-space: nowrap;
-        writing-mode: vertical-lr;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-    }
-    .side-right{
-        grid-column: 3 / 4;
-        grid-row: 1 / 3;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: #866EC7;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .side-right .rectangle{
-        background-color: #866EC7;
-        width: 30px;
-        height: 50px;
-    }
-    .side-right .circle-container{
-        transform: rotate(180deg);
-        width: 30px;
-        height: 50px;
-        margin-right: 2px;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-    }
-    .side-right .circle-container .row{
-        display: flex;
-        gap: 4px;
-    }
-    .side-right .circle-container .row .circle{
-        width: 6px;
-        height: 6px;
-        border-radius: 50px;
-        background-color: #866EC7;
-    }
-    .side-right .text-left{
-        white-space: nowrap;
-        writing-mode: vertical-lr;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
+        & .side-left, .side-right {
+            @apply flex items-center text-[color:var(--primary-color)] flex-col gap-3;
+            & .rectangle{
+                @apply bg-[color:var(--primary-color)] w-[30px] h-[50px]; 
+            }
+            & .circle-container{
+                @apply w-[30px] h-[50px] ml-[-4px] flex flex-col gap-[6px];
+                transform: rotate(180deg);
+                & .row{ 
+                    @apply flex gap-1;
+                    & .circle {
+                        @apply w-1.5 h-1.5 rounded-lg bg-[color:var(--primary-color)];
+                    }
+                }
+            }
+            & .text-left{
+                @apply whitespace-nowrap font-normal text-[40px] ;
+                writing-mode: vertical-lr;
+            }
+        }
+        & .side-left{
+            @apply justify-end;
+            grid-row: 2 / 5;
+            & .text-left{ transform: rotate(180deg); }
+        }
+        .side-right{
+            @apply justify-start;
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+        }
     }
     .about-me{
         grid-column: 2 / 3;
@@ -182,7 +127,7 @@
         grid-column: 2 / 4;
         grid-row: 3 / 4;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
     }
     .social-media-container .social-media {

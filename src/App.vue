@@ -7,4 +7,6 @@ import HelloWorld from './components/TheLayout.vue'
 </template>
 
 <style scoped>
+ @import url("../src/assets/tailwind.css");
+
 </style>
