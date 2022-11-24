@@ -30,4 +30,9 @@ html,
   display: grid;
   align-items: center;
   overflow: hidden;
+  grid-template-rows: 100%;
+}
+#app{
+  overflow: auto;
+  grid-template-rows: 100%;
 }
