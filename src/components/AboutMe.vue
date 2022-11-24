@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="scrolling-icon">
-            <!-- <the-scrolling /> -->
+           <the-scrolling /> <!--  -->
         </div>
     </div>
 </template>
