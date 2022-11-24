@@ -33,12 +33,16 @@
         </div>
         <div class="social-media-container">
             <div class="social-media">
-                <img src="@/components/icons/GitHub.svg" alt="">
-                <img src="@/components/icons/LinkedIn.svg" alt="">
+                <a href="https://github.com/Darynka-Tapia" target="_blank">
+                    <img src="@/components/icons/GitHub.svg" alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/abril-tapia/" target="_blank">
+                    <img src="@/components/icons/LinkedIn.svg" alt="" />
+                </a>
             </div>
         </div>
         <div class="scrolling-icon">
-            <the-scrolling />
+            <!-- <the-scrolling /> -->
         </div>
     </div>
 </template>
