@@ -15,7 +15,7 @@
                 <img src="@/components/icons/experience/TypeScript.svg" alt="TypeScript" />
                 <img src="@/components/icons/experience/VueJs.svg" alt="Vuejs" />
                 <img src="@/components/icons/experience/PHPLogo.svg" alt="PHP" />
-                <img src="@/components/icons/experience/HTML5.svg" alt="HTML 5" />
+                <img src="@/components/icons/experience/iconh-tml.svg" alt="HTML 5" />
                 <img src="@/components/icons/experience/CSS3.svg" alt="CSS 3" />
                 <img src="@/components/icons/experience/Sass.svg" alt="Sass" />
                 <img src="@/components/icons/experience/TailwindCSS.svg" alt="Tailwind Css" />
