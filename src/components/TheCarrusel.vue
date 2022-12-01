@@ -55,7 +55,7 @@
 	},
 	computed: {
 		enviroment() {
-			return document.location.hostname === this.serverPath ? '@' : 'src' ;
+			return document.location.hostname === this.serverPath ? '/opt/build/repo/src/' : 'src' ;
 		},
 		  carouselDatas() {
 			return [
