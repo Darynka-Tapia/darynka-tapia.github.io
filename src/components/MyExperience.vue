@@ -33,7 +33,7 @@
 
 <style lang="scss" scoped>
     .container-experience{
-        @apply sm:max-w-6xl	sm:max-h-[1024px] w-full h-screen grid overflow-hidden mx-auto my-auto;
+        @apply sm:max-w-6xl	sm:max-h-[1024px] w-full h-full grid overflow-hidden mx-auto my-auto;
         grid-template-columns: 64px 1fr 64px;
         grid-template-rows: 1fr 54px;
         & .side-left{

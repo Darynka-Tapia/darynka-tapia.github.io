@@ -27,9 +27,7 @@ body,
 html,
 #app{
   height: 100%;
-  display: grid;
   align-items: center;
-  overflow: hidden;
   grid-template-rows: 100%;
 }
 #app{

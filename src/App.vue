@@ -1,9 +1,9 @@
 <script setup>
-import HelloWorld from './components/TheLayout.vue'
+import TheLayout from './components/TheLayout.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <TheLayout />
 </template>
 
 <style scoped>
