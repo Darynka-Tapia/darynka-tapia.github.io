@@ -50,34 +50,38 @@
 	  return {
 		carouselNumber: 1,
 		direction: 'next',
+		serverPath: 'darynka-tapia.netlify.app', 
 	  };
 	},
 	computed: {
+		enviroment() {
+			return document.location.hostname === this.serverPath ? '@' : 'src' ;
+		},
 		  carouselDatas() {
 			return [
 			  {
 				text: 'Parfum Card',
-				img: 'src/components/icons/projects/parfum-card.png',
+				img: `${this.enviroment}/components/icons/projects/parfum-card.png`,
 				description: 'Diseño de card responsiva, usa HTML, CSS, css Flex',
 				github: 'https://github.com/Darynka-Tapia/frontend-mentor-challenges/tree/master/product-preview-card', 
 				linkPreview: 'https://darynka-tapia.github.io/frontend-mentor-challenges/product-preview-card/'
 			  },
 			  {
 				text: 'Rating project',
-				img: 'src/components/icons/projects/project-rating.png',
+				img: `${this.enviroment}/components/icons/projects/project-rating.png`,
 				description: 'Diseño de seleccion de calificacion, responsiva, usa HTML, CSS, Vuejs'
 			  },
 			  {
 				text: 'CashFlow',
-				img: 'src/components/icons/projects/cashFlow.png',
+				img: `${this.enviroment}/components/icons/projects/cashFlow.png`,
 			  },
 			  {
 				text: 'Mini reproductor',
-				img: 'src/components/icons/projects/mini-reproductor.png',
+				img: `${this.enviroment}/components/icons/projects/mini-reproductor.png`,
 			  },
 			  {
 				text: 'PlatziExchange',
-				img: 'src/components/icons/projects/platzi-exchange.png',
+				img: `${this.enviroment}/components/icons/projects/platzi-exchange.png`,
 			  },
 			]
 		  },
