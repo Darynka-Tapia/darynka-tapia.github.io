@@ -50,38 +50,34 @@
 	  return {
 		carouselNumber: 1,
 		direction: 'next',
-		serverPath: 'darynka-tapia.netlify.app', 
 	  };
 	},
 	computed: {
-		enviroment() {
-			return document.location.hostname === this.serverPath ? '/opt/build/repo/src/' : 'src' ;
-		},
 		  carouselDatas() {
 			return [
 			  {
 				text: 'Parfum Card',
-				img: `${this.enviroment}/components/icons/projects/parfum-card.png`,
+				img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/parfum-card.png?raw=true',
 				description: 'Diseño de card responsiva, usa HTML, CSS, css Flex',
 				github: 'https://github.com/Darynka-Tapia/frontend-mentor-challenges/tree/master/product-preview-card', 
 				linkPreview: 'https://darynka-tapia.github.io/frontend-mentor-challenges/product-preview-card/'
 			  },
 			  {
 				text: 'Rating project',
-				img: `${this.enviroment}/components/icons/projects/project-rating.png`,
+				img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/project-rating.png?raw=true',
 				description: 'Diseño de seleccion de calificacion, responsiva, usa HTML, CSS, Vuejs'
 			  },
 			  {
 				text: 'CashFlow',
-				img: `${this.enviroment}/components/icons/projects/cashFlow.png`,
+				img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/cashFlow.png?raw=true`,
 			  },
 			  {
 				text: 'Mini reproductor',
-				img: `${this.enviroment}/components/icons/projects/mini-reproductor.png`,
+				img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/mini-reproductor.png?raw=true`,
 			  },
 			  {
 				text: 'PlatziExchange',
-				img: `${this.enviroment}/components/icons/projects/platzi-exchange.png`,
+				img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/platzi-exchange.png?raw=true`,
 			  },
 			]
 		  },
