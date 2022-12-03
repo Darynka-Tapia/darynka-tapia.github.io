@@ -55,6 +55,14 @@
 	computed: {
 		  carouselDatas() {
 			return [
+				{
+					text: 'Calculadora con css Grid',
+					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png',
+					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					github: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/tree/master/src/components/calculator', 
+					linkPreview: 'https://darynka-tapia.netlify.app/#/calculator'
+			  
+				},
 			  {
 				text: 'Parfum Card',
 				img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/parfum-card.png?raw=true',
