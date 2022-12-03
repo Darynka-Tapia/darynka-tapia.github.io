@@ -8,16 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-	<div class="the-layout">
-		<AboutMe />
-		<MyExperience />
-		<MyProjects />
-	</div>
+	<AboutMe />
+	<MyExperience />
+	<MyProjects />
 </template>
-
-<style lang="scss" scope>
-.the-layout{
-	@apply w-full h-full;
-	background-image: var(--bg-image-pattern);
-}
-</style>

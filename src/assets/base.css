@@ -16,6 +16,7 @@ body{
   box-sizing: content-box;
   font-family: 'Baloo 2', cursive;
   background: #ffffff;
+	background-image: var(--bg-image-pattern);
 }
 
 h1, h2, h3, h4, span, p, label {
