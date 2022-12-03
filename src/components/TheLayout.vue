@@ -17,6 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style lang="scss" scope>
 .the-layout{
+	@apply w-full h-full;
 	background-image: var(--bg-image-pattern);
 }
 </style>
