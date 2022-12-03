@@ -57,7 +57,7 @@
 			return [
 				{
 					text: 'Calculadora con css Grid',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png',
+					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png?raw=true',
 					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
 					github: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/tree/master/src/components/calculator', 
 					linkPreview: 'https://darynka-tapia.netlify.app/#/calculator'
