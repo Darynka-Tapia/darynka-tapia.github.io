@@ -3,10 +3,20 @@ import { ref } from 'vue';
 import AboutMe from '@/components/AboutMe.vue'
 import MyExperience from '@/components/MyExperience.vue';
 import MyProjects from '@/components/MyProjects.vue';
+import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
 <template>
-	<AboutMe />
-  	<MyExperience />
-  	<MyProjects />
+	<div class="the-layout">
+		<AboutMe />
+		<MyExperience />
+		<MyProjects />
+	</div>
 </template>
+
+<style lang="scss" scope>
+.the-layout{
+	background-image: var(--bg-image-pattern);
+}
+</style>
