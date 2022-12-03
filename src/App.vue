@@ -3,7 +3,7 @@ import TheLayout from './components/TheLayout.vue'
 </script>
 
 <template>
-  <TheLayout />
+  <RouterView />
 </template>
 
 <style scoped>
