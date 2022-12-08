@@ -7,8 +7,8 @@
             </div>
             <div class="calculator-grid">
                 <div class="item erase-all" @click="earseAll(null)">C</div>
-                <div class="item erase"> ◄ </div>
-                <div class="item percentage"> % </div>
+                <div class="item erase disabled" > ◄ </div>
+                <div class="item percentage disabled" > % </div>
                 <div class="item divide" @click="operation('/')"> / </div>
                 <div class="item numbers">
                     <span
@@ -86,6 +86,9 @@
             @apply grid grid-rows-4 grid-cols-4 gap-2 p-4 bg-[#F5F5F5];
             & .item{
                 @apply rounded-2xl text-center cursor-pointer;
+            }
+            & .item.disabled{
+                @apply opacity-50;
             }
             & .item:not(.numbers):active{ @apply bg-gray-500 text-[#E7E7E9]; }
             & .item:not(.numbers):focus { outline: none; } 
