@@ -6,7 +6,7 @@
                 <span class="result"> {{ result }} </span>
             </div>
             <div class="calculator-grid">
-                <div class="item erase-all" @click="earseAll()">C</div>
+                <div class="item erase-all" @click="earseAll(null)">C</div>
                 <div class="item erase"> ◄ </div>
                 <div class="item percentage"> % </div>
                 <div class="item divide" @click="operation('/')"> / </div>
@@ -40,20 +40,21 @@
     const isClicOnResult = ref(false); 
     const opt = ref(0);
     const operation = (item) => {
-        isClicOnResult.value ? earseAll() : operationStr.value += item ;
-        
+        isClicOnResult.value ? earseAll(item) : operationStr.value += item ;
+        if(operationStr.value === '='){ earseAll(null); return}
         if(typeof item === 'number') opt.value = eval(operationStr.value );
-
         if(item === '='){
             result.value = opt.value ;
             isClicOnResult.value = true;
         }
-        console.log(operationStr.value, opt.value);
     };
-    const earseAll = () => {
+    const earseAll = (item) => {
         operationStr.value = '';
         result.value = 0;
         opt.value = 0;
+        isClicOnResult.value = false;
+        if(item !== null ) { operation(item); }
+        
     };
 </script>
 
