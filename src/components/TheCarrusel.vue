@@ -56,6 +56,14 @@
 		  carouselDatas() {
 			return [
 				{
+					text: 'Rock, paper and scissors game',
+					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/rps-game.png?raw=true',
+					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					github: 'https://github.com/Darynka-Tapia/rps-game', 
+					linkPreview: 'https://rps-game-09.netlify.app/'
+			  
+				},
+				{
 					text: 'Calculadora con css Grid',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png?raw=true',
 					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
