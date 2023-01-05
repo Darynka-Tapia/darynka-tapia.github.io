@@ -58,15 +58,15 @@
 				{
 					text: 'Rock, paper and scissors game',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/rps-game.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: 'Game with vue, JS, HTML, css Grid',
 					github: 'https://github.com/Darynka-Tapia/rps-game', 
 					linkPreview: 'https://rps-game-09.netlify.app/'
 			  
 				},
 				{
-					text: 'Calculadora con css Grid',
+					text: 'Calculator with css Grid',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: 'Calculator with HTML, CSS, css Grid',
 					github: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/tree/master/src/components/calculator', 
 					linkPreview: 'https://darynka-tapia.netlify.app/#/calculator'
 			  
@@ -74,39 +74,42 @@
 				{
 					text: 'Parfum Card',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/parfum-card.png?raw=true',
-					description: 'Diseño de card responsiva, usa HTML, CSS, css Flex',
+					description: 'Responsive card design, use HTML, CSS, css Flex',
 					github: 'https://github.com/Darynka-Tapia/frontend-mentor-challenges/tree/master/product-preview-card', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-mentor-challenges/product-preview-card/'
 				},
 				{
 					text: 'Rating project',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/project-rating.png?raw=true',
-					description: 'Diseño de seleccion de calificacion, responsiva, usa HTML, CSS, Vuejs',
+					description: 'Qualification selection design responsive, use HTML, CSS, Vuejs',
 					github: 'https://github.com/Darynka-Tapia/frontend-mentor-vuejs-challenges/tree/master/src/components/rating', 
 					linkPreview: 'https://darynka-tapia-frontend-mentor.netlify.app/#/rating'
 				},
 				{
 					text: 'CashFlow',
 					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/cashFlow.png?raw=true`,
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/cashflow', 
 					linkPreview: 'https://cashflow97.netlify.app/'
 				},
 				{
 					text: 'Mini reproductor',
 					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/mini-reproductor.png?raw=true`,
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/reproductor', 
 					linkPreview: 'https://mini-reproductor-dt.netlify.app'
 				},
 				{
 					text: 'PlatziExchange',
 					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/platzi-exchange.png?raw=true`,
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/platzi-exchange', 
 					linkPreview: 'https://platzi-coins.netlify.app/'
 				},
 				{
 					text: 'Google clon',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/google-clon.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/proyectosplatzi/tree/master/desarrollo-web/clone-google', 
 					linkPreview: 'https://darynka-tapia.github.io/proyectosplatzi/desarrollo-web/clone-google/'
 			  
@@ -114,7 +117,7 @@
 				{
 					text: 'Wikipedia clon',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/wikipedia-clon.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/proyectosplatzi/tree/master/desarrollo-web/clone-wiki', 
 					linkPreview: 'https://darynka-tapia.github.io/proyectosplatzi/desarrollo-web/clone-wiki/'
 			  
@@ -122,21 +125,21 @@
 				{
 					text: 'Twitter clon (login and twits)',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/tweeter-clone.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/vue__tweeter-clone', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/vue__tweeter-clone/'
 				},
 				{
 					text: 'profesional-blog',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/profesional-blog.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/professional-blog', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/professional-blog/'
 				},
 				{
 					text: 'batatabit.png',
 					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/batatabit.png?raw=true',
-					description: 'Cuadricula de calculadora, usa HTML, CSS, css Grid',
+					description: '',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/mobileFirst', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/mobileFirst/'
 				},
