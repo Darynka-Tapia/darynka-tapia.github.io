@@ -1,7 +1,7 @@
 <template>
-	<div class="app">
-	  <div class="app__body">
-		<div class="app__body-carousel" >
+	<div class="projects-container">
+	  <div class="projects-container__body">
+		<div class="projects-container__body-carousel" >
 		  <transition
 			:name="transitionName"
 			mode="out-in"
@@ -169,7 +169,7 @@
   </script>
   
 <style lang="scss" scope>
-  	.app {
+  	.projects-container {
 		@apply flex flex-col items-center sm:justify-center justify-end w-full h-full py-4;
 		overflow: auto;
 		font-family: Helvetica, Arial, sans-serif;
