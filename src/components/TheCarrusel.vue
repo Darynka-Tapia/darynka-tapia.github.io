@@ -45,6 +45,7 @@
   </template>
   
   <script>
+  import rpsGameIcon from '@/components/icons/projects/rps-game.svg';
   export default {
 	data() {
 	  return {
@@ -57,7 +58,7 @@
 			return [
 				{
 					text: 'Rock, paper and scissors game',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/rps-game.png?raw=true',
+					img: rpsGameIcon, // 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/rps-game.png?raw=true',
 					description: 'Game with vue, JS, HTML, css Grid',
 					github: 'https://github.com/Darynka-Tapia/rps-game', 
 					linkPreview: 'https://rps-game-09.netlify.app/'
