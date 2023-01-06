@@ -143,7 +143,7 @@
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/vue__tweeter-clone/'
 				},
 				{
-					text: 'profesional-blog',
+					text: 'Profesional blog',
 					img: profesionalBlogIcon, 
 					description: 'Project designed with platzi.com courses',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/professional-blog', 
