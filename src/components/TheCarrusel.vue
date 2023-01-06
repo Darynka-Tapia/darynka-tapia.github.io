@@ -46,6 +46,18 @@
   
   <script>
   import rpsGameIcon from '@/components/icons/projects/rps-game.svg';
+  import calculatorIcon from '@/components/icons/projects/calculator.svg';
+  import parfumCardIcon from '@/components/icons/projects/parfum-card.svg';
+  import projectRatingIcon from '@/components/icons/projects/project-rating.svg';
+  import cashFlowIcon from '@/components/icons/projects/cashFlow.svg';
+  import playerIcon from '@/components/icons/projects/mini-reproductor.svg';
+  import exchangeIcon from '@/components/icons/projects/platzi-exchange.svg';
+  import googleIcon from '@/components/icons/projects/google-clon.svg';
+  import wikiIcon from '@/components/icons/projects/wikipedia-clon.svg';
+  import TwitterIcon from '@/components/icons/projects/tweeter-clone.svg';
+  import profesionalBlogIcon from '@/components/icons/projects/profesional-blog.svg';
+  import batatabitIcon from '@/components/icons/projects/batatabit.svg';
+
   export default {
 	data() {
 	  return {
@@ -58,7 +70,7 @@
 			return [
 				{
 					text: 'Rock, paper and scissors game',
-					img: rpsGameIcon, // 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/rps-game.png?raw=true',
+					img: rpsGameIcon,
 					description: 'Game with vue, JS, HTML, css Grid',
 					github: 'https://github.com/Darynka-Tapia/rps-game', 
 					linkPreview: 'https://rps-game-09.netlify.app/'
@@ -66,81 +78,81 @@
 				},
 				{
 					text: 'Calculator with css Grid',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/calculator.png?raw=true',
+					img: calculatorIcon,
 					description: 'Calculator with HTML, CSS, css Grid',
 					github: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/tree/master/src/components/calculator', 
 					linkPreview: 'https://darynka-tapia.netlify.app/#/calculator'
 			  
 				},
 				{
-					text: 'Parfum Card',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/parfum-card.png?raw=true',
+					text: 'Perfume description card',
+					img: parfumCardIcon,
 					description: 'Responsive card design, use HTML, CSS, css Flex',
 					github: 'https://github.com/Darynka-Tapia/frontend-mentor-challenges/tree/master/product-preview-card', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-mentor-challenges/product-preview-card/'
 				},
 				{
 					text: 'Rating project',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/project-rating.png?raw=true',
-					description: 'Qualification selection design responsive, use HTML, CSS, Vuejs',
+					img: projectRatingIcon,
+					description: 'Rating selection design responsive, use HTML, CSS, Vuejs',
 					github: 'https://github.com/Darynka-Tapia/frontend-mentor-vuejs-challenges/tree/master/src/components/rating', 
 					linkPreview: 'https://darynka-tapia-frontend-mentor.netlify.app/#/rating'
 				},
 				{
 					text: 'CashFlow',
-					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/cashFlow.png?raw=true`,
-					description: '',
+					img: cashFlowIcon, 
+					description: 'Project designed with platzi.com courses, use vuejs,',
 					github: 'https://github.com/Darynka-Tapia/cashflow', 
 					linkPreview: 'https://cashflow97.netlify.app/'
 				},
 				{
-					text: 'Mini reproductor',
-					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/mini-reproductor.png?raw=true`,
-					description: '',
+					text: 'Mini music player',
+					img: playerIcon,
+					description: 'Frontend layout of a mini music player',
 					github: 'https://github.com/Darynka-Tapia/reproductor', 
 					linkPreview: 'https://mini-reproductor-dt.netlify.app'
 				},
 				{
 					text: 'PlatziExchange',
-					img: `https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/platzi-exchange.png?raw=true`,
-					description: '',
+					img: exchangeIcon,
+					description: 'Project designed with platzi.com courses, use vuejs, vue-route',
 					github: 'https://github.com/Darynka-Tapia/platzi-exchange', 
 					linkPreview: 'https://platzi-coins.netlify.app/'
 				},
 				{
 					text: 'Google clon',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/google-clon.png?raw=true',
-					description: '',
+					img: googleIcon,
+					description: 'Project designed with platzi.com courses',
 					github: 'https://github.com/Darynka-Tapia/proyectosplatzi/tree/master/desarrollo-web/clone-google', 
 					linkPreview: 'https://darynka-tapia.github.io/proyectosplatzi/desarrollo-web/clone-google/'
 			  
 				},
 				{
 					text: 'Wikipedia clon',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/wikipedia-clon.png?raw=true',
-					description: '',
+					img: wikiIcon,
+					description: 'Created from a challenge provided in one of the platzi.com courses',
 					github: 'https://github.com/Darynka-Tapia/proyectosplatzi/tree/master/desarrollo-web/clone-wiki', 
 					linkPreview: 'https://darynka-tapia.github.io/proyectosplatzi/desarrollo-web/clone-wiki/'
 			  
 				},
 				{
 					text: 'Twitter clon (login and twits)',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/tweeter-clone.png?raw=true',
-					description: '',
+					img: TwitterIcon,
+					description: 'Project designed with the mobile first methodology and vuejs',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/vue__tweeter-clone', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/vue__tweeter-clone/'
 				},
 				{
 					text: 'profesional-blog',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/profesional-blog.png?raw=true',
-					description: '',
+					img: profesionalBlogIcon, 
+					description: 'Project designed with platzi.com courses',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/professional-blog', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/professional-blog/'
 				},
 				{
-					text: 'batatabit.png',
-					img: 'https://github.com/Darynka-Tapia/darynka-tapia.github.io/blob/master/src/components/icons/projects/batatabit.png?raw=true',
-					description: '',
+					text: 'Batatabit',
+					img: batatabitIcon,
+					description: 'Project designed with the mobile first methodology with platzi.com courses',
 					github: 'https://github.com/Darynka-Tapia/frontend-architecture/tree/master/mobileFirst', 
 					linkPreview: 'https://darynka-tapia.github.io/frontend-architecture/mobileFirst/'
 				},
