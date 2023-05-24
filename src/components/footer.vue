@@ -10,7 +10,7 @@ import GitHubDesktopIcon from '@/assets/icons/GitHub-desktop.svg';
   <footer>
     <picture>
       <source media="(min-width: 640px)" :srcset="GitHubDesktopIcon">
-      <img :src="GitHubIcon" alt="icono de github">
+      <img :src="GitHubIcon" alt="icono de github"> 
     </picture>
     <picture>
       <source media="(min-width: 640px)" :srcset="linkedinDesktopIcon">
