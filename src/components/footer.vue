@@ -3,14 +3,18 @@
 
 <template>
   <footer>
-    <picture>
-      <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub-desktop.svg">
-      <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub.svg" alt="icono de github"> 
-    </picture>
-    <picture>
-      <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg">
-      <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg" alt="icono de Linkedin">
-    </picture>
+    <a href="https://github.com/Darynka-Tapia" target="_blank">
+      <picture>
+        <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub-desktop.svg">
+        <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub.svg" alt="icono de github"> 
+      </picture>
+    </a>
+    <a href="https://www.linkedin.com/in/abril-tapia" target="_blank">
+      <picture>
+        <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg">
+        <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg" alt="icono de Linkedin">
+      </picture>
+    </a>
   </footer>
 </template>
 
