@@ -1,15 +1,20 @@
 <script setup>
+import linkedinIcon from '@/assets/icons/Linkedin.svg';
+import linkedinDesktopIcon from '@/assets/icons/Linkedin-desktop.svg';
+import GitHubIcon from '@/assets/icons/GitHub.svg';
+import GitHubDesktopIcon from '@/assets/icons/GitHub-desktop.svg';
+
 </script>
 
 <template>
   <footer>
     <picture>
-      <source media="(min-width: 640px)" srcset="@/assets/icons/GitHub-desktop.svg">
-      <img src="@/assets/icons/GitHub.svg" alt="icono de github">
+      <source media="(min-width: 640px)" :srcset="GitHubDesktopIcon">
+      <img :src="GitHubIcon" alt="icono de github">
     </picture>
     <picture>
-      <source media="(min-width: 640px)" srcset="@/assets/icons/Linkedin-desktop.svg">
-      <img src="@/assets/icons/Linkedin.svg" alt="icono de Linkedin">
+      <source media="(min-width: 640px)" :srcset="linkedinDesktopIcon">
+      <img :src="linkedinIcon" alt="icono de Linkedin">
     </picture>
   </footer>
 </template>
