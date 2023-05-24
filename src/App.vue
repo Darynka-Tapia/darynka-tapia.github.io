@@ -1,12 +1,20 @@
 <script setup>
-import TheLayout from './components/TheLayout.vue'
+import { RouterLink, RouterView } from 'vue-router'
+import FooterView from '@/components/footer.vue'
+import HeaderView from '@/components/header.vue'
+
 </script>
 
 <template>
-  <RouterView />
+  <HeaderView />
+  <main>
+    <RouterView />
+  </main>
+  <FooterView />
 </template>
 
-<style scoped>
- @import url("../src/assets/tailwind.css");
-
+<style scoped lang="scss">
+main{
+  @apply py-2 px-8 h-[80%]; 
+}
 </style>

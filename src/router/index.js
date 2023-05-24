@@ -1,22 +1,22 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import PorfolioView from '../components/TheLayout.vue';
-// import NotFound from '../views/404View.vue';
-
+import { createRouter, createWebHistory } from 'vue-router'
+const HomeView = () => import('../views/HomeView.vue')
+const NotFoundView = () => import('../views/404.vue')
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes: [ 
-    //{path:'/404', component: NotFound },
-    //{path:'/:catchAll(.*)', redirect: '/404' },
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
     {
       path: '/',
       name: 'home',
-      component: PorfolioView
+      component: HomeView
     },
-    { 
-        path: '/calculator',
-        name: 'calculator',
-        component: () => import('../components/calculator/TheCalculator.vue')
+    {
+      path: '/about',
+      name: 'about',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: NotFoundView
     }
   ]
 })
