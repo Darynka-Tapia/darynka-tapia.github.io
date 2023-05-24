@@ -1,9 +1,4 @@
 <script setup>
-import linkedinIcon from '@/assets/icons/Linkedin.svg';
-import linkedinDesktopIcon from '@/assets/icons/Linkedin-desktop.svg';
-import GitHubIcon from '@/assets/icons/GitHub.svg';
-import GitHubDesktopIcon from '@/assets/icons/GitHub-desktop.svg';
-
 </script>
 
 <template>

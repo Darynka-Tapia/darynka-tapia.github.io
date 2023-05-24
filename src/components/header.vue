@@ -1,6 +1,4 @@
 <script setup>
-import LogoIcon from '@/assets/icons/Logo.svg';
-import LogoDesktopIcon from '@/assets/icons/Logo-desktop.svg';
 
 </script>
 <template>
