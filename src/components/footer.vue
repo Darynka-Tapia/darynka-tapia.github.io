@@ -9,12 +9,12 @@ import GitHubDesktopIcon from '@/assets/icons/GitHub-desktop.svg';
 <template>
   <footer>
     <picture>
-      <source media="(min-width: 640px)" :srcset="GitHubDesktopIcon">
-      <img :src="GitHubIcon" alt="icono de github"> 
+      <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub-desktop.svg">
+      <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/GitHub.svg" alt="icono de github"> 
     </picture>
     <picture>
-      <source media="(min-width: 640px)" :srcset="linkedinDesktopIcon">
-      <img :src="linkedinIcon" alt="icono de Linkedin">
+      <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg">
+      <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/LinkedIn-desktop.svg" alt="icono de Linkedin">
     </picture>
   </footer>
 </template>

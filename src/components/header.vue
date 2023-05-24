@@ -6,8 +6,8 @@ import LogoDesktopIcon from '@/assets/icons/Logo-desktop.svg';
 <template>
   <header>
     <picture>
-      <source media="(min-width: 640px)" :srcset="LogoDesktopIcon">
-      <img :src="LogoIcon" alt="Logo">
+      <source media="(min-width: 640px)" srcset="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Logo-desktop.svg">
+      <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Logo.svg" alt="Logo">
     </picture>
   </header>
 </template>
