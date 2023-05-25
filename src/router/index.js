@@ -2,9 +2,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 const HomeView = () => import('../views/HomeView.vue')
 const NotFoundView = () => import('../views/404.vue')
 
+const AboutView = () => import('../views/AboutView.vue')
+const SkilsView = () => import('../views/SkilsView.vue')
+const PorfolioView = () => import('../views/PorfolioView.vue')
+const ContactView = () => import('../views/ContactView.vue')
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    { 
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound', 
+      component: NotFoundView
+    },
     {
       path: '/',
       name: 'home',
@@ -13,10 +23,22 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: NotFoundView
+      component: AboutView
+    },
+    {
+      path: '/skils',
+      name: 'skils',
+      component: SkilsView
+    },
+    {
+      path: '/porfolio',
+      name: 'porfolio',
+      component: PorfolioView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
     }
   ]
 })

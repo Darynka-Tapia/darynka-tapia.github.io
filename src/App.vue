@@ -15,6 +15,6 @@ import HeaderView from '@/components/header.vue'
 
 <style scoped lang="scss">
 main{
-  @apply py-2 px-8 h-[80%]; 
+  @apply py-2 px-8 h-[calc(100%-10%-80px)] overflow-auto; 
 }
 </style>
