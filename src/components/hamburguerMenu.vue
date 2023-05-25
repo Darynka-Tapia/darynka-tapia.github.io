@@ -9,7 +9,7 @@
       <ul class="list" v-if="isMenuShow">
         <router-link @click="closeMenu" to="/"><li>Home</li></router-link>
         <router-link @click="closeMenu" to="/about"><li>About</li></router-link>
-        <router-link @click="closeMenu" to="/skils"><li>Skils</li></router-link>
+        <router-link @click="closeMenu" to="/skills"><li>Skills</li></router-link>
         <router-link @click="closeMenu" to="/porfolio"><li>Porfolio</li></router-link>
         <router-link @click="closeMenu" to="/contact"><li>Contact</li></router-link>
       </ul>
@@ -19,7 +19,7 @@
     <ul class="list">
       <router-link to="/"><li>Home</li></router-link>
       <router-link to="/about"><li>About</li></router-link>
-      <router-link to="/skils"><li>Skils</li></router-link>
+      <router-link to="/skills"><li>Skills</li></router-link>
       <router-link to="/porfolio"><li>Porfolio</li></router-link>
       <router-link to="/contact"><li>Contact</li></router-link>
     </ul>

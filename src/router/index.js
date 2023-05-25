@@ -26,8 +26,8 @@ const router = createRouter({
       component: AboutView
     },
     {
-      path: '/skils',
-      name: 'skils',
+      path: '/skills',
+      name: 'skills',
       component: SkilsView
     },
     {
