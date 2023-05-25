@@ -1,20 +1,23 @@
 <template>
-  <div class="menu-hamburger">
-    <div class="image-icon">
-      <img
-      @click="openMenu()" 
-        src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Menu.svg" >
+  <Teleport to="body">
+    <div class="menu-hamburger">
+      <div class="image-icon">
+        <img
+        @click="openMenu()" 
+          src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Menu.svg" >
+      </div>
+      <Transition duration="550" name="nested">
+        <ul class="list" v-if="isMenuShow">
+          <router-link @click="closeMenu" to="/"><li>Home</li></router-link>
+          <router-link @click="closeMenu" to="/about"><li>About</li></router-link>
+          <router-link @click="closeMenu" to="/skills"><li>Skills</li></router-link>
+          <router-link @click="closeMenu" to="/porfolio"><li>Porfolio</li></router-link>
+          <router-link @click="closeMenu" to="/contact"><li>Contact</li></router-link>
+        </ul>
+      </Transition>
     </div>
-    <Transition duration="550" name="nested">
-      <ul class="list" v-if="isMenuShow">
-        <router-link @click="closeMenu" to="/"><li>Home</li></router-link>
-        <router-link @click="closeMenu" to="/about"><li>About</li></router-link>
-        <router-link @click="closeMenu" to="/skills"><li>Skills</li></router-link>
-        <router-link @click="closeMenu" to="/porfolio"><li>Porfolio</li></router-link>
-        <router-link @click="closeMenu" to="/contact"><li>Contact</li></router-link>
-      </ul>
-    </Transition>
-  </div>
+  </Teleport>
+
   <div class="menu">
     <ul class="list">
       <router-link to="/"><li>Home</li></router-link>
