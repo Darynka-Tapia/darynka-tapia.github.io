@@ -9,7 +9,6 @@
 
 <script setup>
   const skils = [
-    
     {icon: '', name: 'vuejs'},
     {icon: '', name: 'html5'},
     {icon: '', name: 'css'},
@@ -43,6 +42,7 @@
     {icon: '', name: 'notion'},
     {icon: '', name: 'postman'},
     {icon: '', name: 'trello'},
+    {icon: '', name: 'Git'},
   ]
 </script>
 

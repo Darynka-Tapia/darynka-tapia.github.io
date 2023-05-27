@@ -13,7 +13,7 @@
       <div class="card__about--links">
         <a v-if="props.data.links.figma !== ''" :href="props.data.links.figma" target="_blank">
           <picture>
-            <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Figma.svg" alt="icono de github"> 
+            <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Figma.svg" alt="icono de figma"> 
           </picture>
         </a>
         <a v-if="props.data.links.github !== ''" :href="props.data.links.github" target="_blank">
@@ -23,7 +23,7 @@
         </a>
         <a v-if="props.data.links.demo !== ''" :href="props.data.links.demo" target="_blank">
           <picture>
-            <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/ExternalLink.svg" alt="icono de github"> 
+            <img src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/ExternalLink.svg" alt="icono de enlace externo"> 
           </picture>
         </a>
       </div>

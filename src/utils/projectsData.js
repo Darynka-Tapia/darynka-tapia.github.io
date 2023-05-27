@@ -8,7 +8,7 @@ export const projectsList = [
       demo: 'https://old-portfolio-dt.netlify.app/', 
       figma: 'https://www.figma.com/proto/X4lwFZKTzCXoK00eu2e32N/portfolio?type=design&node-id=1-29&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A29&show-proto-sidebar=1'
     }, 
-    skills: new Array('HTML', 'CSS', 'CSS Grid', 'CSS Flex')
+    skills: new Array('HTML', 'CSS', 'CSS Grid', 'CSS Flex', 'Figma')
   },
   {
     name: 'Rock, Paper, Scissors', 
@@ -19,7 +19,7 @@ export const projectsList = [
       demo: 'https://rps-game-09.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('vuejs', 'TailwindCSS', 'Javascript', 'HTML', 'CSS')
+    skills: new Array('Vue.js', 'TailwindCss', 'JavaScript', 'HTML', 'CSS')
   },
   {
     name: 'Perfume description card', 
@@ -31,6 +31,17 @@ export const projectsList = [
       figma: ''
     }, 
     skills: new Array('HTML', 'CSS', 'CSS Flex')
+  },
+  {
+    name: 'TravelApp', 
+    description: 'Project designed with platzi.com courses.',
+    image: 'https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/images/travelapp.png',
+    links: {
+      github: 'https://github.com/Darynka-Tapia/flutter_app', 
+      demo: '', 
+      figma: ''
+    }, 
+    skills: new Array('Flutter', 'Dart')
   },
   {
     name: 'Calculator ', 
@@ -52,7 +63,7 @@ export const projectsList = [
       demo: 'https://darynka-tapia-frontend-mentor.netlify.app/#/rating', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vuejs')
+    skills: new Array('HTML', 'CSS', 'Vue.js')
   },
   {
     name: 'CashFlow', 
@@ -63,7 +74,7 @@ export const projectsList = [
       demo: 'https://cashflow97.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vuejs')
+    skills: new Array('HTML', 'CSS', 'Vue.js')
   },
   {
     name: 'Mini music player', 
@@ -85,7 +96,7 @@ export const projectsList = [
       demo: 'https://platzi-coins.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('Vuejs', 'vue-router')
+    skills: new Array('Vue.js', 'vue-router')
   },
   {
     name: 'Google clon', 
@@ -118,7 +129,7 @@ export const projectsList = [
       demo: 'https://darynka-tapia.github.io/frontend-architecture/vue__tweeter-clone/', 
       figma: ''
     }, 
-    skills: new Array('mobile first', 'Vuejs', 'HTML', 'CSS')
+    skills: new Array('mobile first', 'Vue.js', 'HTML', 'CSS')
   },
   {
     name: 'Profesional blog', 
