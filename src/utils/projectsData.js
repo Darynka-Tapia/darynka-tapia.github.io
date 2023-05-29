@@ -11,8 +11,19 @@ export const projectsList = [
     skills: new Array('HTML', 'CSS', 'CSS Grid', 'CSS Flex', 'Figma')
   },
   {
+    name: 'Todo list', 
+    description: 'Proyecto creado para practicar diseño, vue, y aprender sobre el manejo de estados con pinia',
+    image: 'https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/images/todo-list.png',
+    links: {
+      github: 'https://github.com/Darynka-Tapia/todo-list', 
+      demo: 'https://todo-list-09.netlify.app/', 
+      figma: ''
+    }, 
+    skills: new Array('HTML', 'CSS', 'Vue', 'Pinia')
+  },
+  {
     name: 'Rock, Paper, Scissors', 
-    description: 'Juego digital, en el cual el usuario juega contra el sistema. El origina se utiliza con mucha frecuencia para decidir quién de dos personas hará algo',
+    description: 'Digital game, in which the user plays against the system.',
     image: 'https://old-portfolio-dt.netlify.app/assets/rps-game.de818461.svg',
     links: {
       github: 'https://github.com/Darynka-Tapia/rps-game', 
