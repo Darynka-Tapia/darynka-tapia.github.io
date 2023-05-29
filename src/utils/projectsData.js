@@ -19,7 +19,7 @@ export const projectsList = [
       demo: 'https://todo-list-09.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vue', 'Pinia')
+    skills: new Array('HTML', 'CSS', 'Vue.js', 'Pinia')
   },
   {
     name: 'Rock, Paper, Scissors', 
