@@ -6,7 +6,6 @@ export function useProjects() {
   const projects = ref();
   getProjects()
   function getProjects(filter){
-    console.log(filter)
     if(filter === undefined){
       projects.value = projectsList;
       return
