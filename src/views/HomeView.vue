@@ -1,19 +1,20 @@
 <script setup>
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n();
 </script>
 
 <template>
   <div class="view-container">
-    <p class="greetings">Hi I'm</p>
-    <p class="my-name">Darynka Tapia</p>
+    <p class="greetings">{{ $t('home.hello') }}</p>
+    <p class="my-name">{{ $t('home.myName') }}</p>
     <div class="profession">
-      <p>I am a</p>
+      <p>{{ $t('home.profession.iam') }}</p>
       <div class="container-text">
         <div class="text">
-          <strong class="text-content">Frontend developer</strong>
+          <strong class="text-content">{{ $t('home.profession.frontend') }}</strong>
         </div>
         <div class="text">
-          <strong class="text-content">Web developer</strong>
+          <strong class="text-content">{{ $t('home.profession.web') }}</strong>
         </div>
       </div>
         
@@ -63,7 +64,7 @@
 }
 .text-content {
   @apply text-[#03001c] flex justify-center items-center bg-white h-full max-w-[250px] sm:max-w-[300px]
-  px-2 rounded-2xl ;
+  px-2 rounded-2xl text-xl sm:text-3xl;
   
 }
 @keyframes flip-animation {

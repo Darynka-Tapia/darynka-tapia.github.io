@@ -1,5 +1,5 @@
 <template>
-  <h1 class="section-title">Contact</h1>
+  <h1 class="section-title">{{ $t('contact.title') }}</h1>
   <div class="form">
     <svg width="80" height="89" viewBox="0 0 80 89" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <rect width="80" height="88.6588" fill="url(#pattern0)"/>
@@ -17,8 +17,8 @@
     </div>
 
     <div class="buttons">
-      <button @click="CopytoClipboard">Copy email <img src="@/assets/icons/CopytoClipboard.svg"></button>
-      <a href="public/CV-Darynka-Tapia.pdf" download="CV-Darynka-Tapia.pdf">Download CV <img src="@/assets/icons/Download.svg"></a>
+      <button @click="CopytoClipboard">{{ $t('contact.email') }} <img src="@/assets/icons/CopytoClipboard.svg"></button>
+      <a href="public/CV-Darynka-Tapia.pdf" download="CV-Darynka-Tapia.pdf">{{ $t('contact.cv') }} <img src="@/assets/icons/Download.svg"></a>
     </div>
   </div>
 </template>

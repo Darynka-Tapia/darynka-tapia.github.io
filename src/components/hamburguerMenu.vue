@@ -2,17 +2,18 @@
   <Teleport to="body">
     <div class="menu-hamburger">
       <div class="image-icon">
+        <TheLangMenu />
         <img
         @click="openMenu()" 
           src="https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/icons/Menu.svg" >
       </div>
       <Transition duration="550" name="nested">
         <ul class="list" v-if="isMenuShow">
-          <router-link @click="closeMenu" to="/"><li>Home</li></router-link>
-          <router-link @click="closeMenu" to="/about"><li>About</li></router-link>
-          <router-link @click="closeMenu" to="/skills"><li>Skills</li></router-link>
-          <router-link @click="closeMenu" to="/porfolio"><li>Porfolio</li></router-link>
-          <router-link @click="closeMenu" to="/contact"><li>Contact</li></router-link>
+          <router-link @click="closeMenu" to="/"><li>{{ $t('header.home') }}</li></router-link>
+          <router-link @click="closeMenu" to="/about"><li>{{ $t('header.about') }}</li></router-link>
+          <router-link @click="closeMenu" to="/skills"><li>{{ $t('header.skills') }}</li></router-link>
+          <router-link @click="closeMenu" to="/porfolio"><li>{{ $t('header.porfolio') }}</li></router-link>
+          <router-link @click="closeMenu" to="/contact"><li>{{ $t('header.contact') }}</li></router-link>
         </ul>
       </Transition>
     </div>
@@ -20,17 +21,22 @@
 
   <div class="menu">
     <ul class="list">
-      <router-link to="/"><li>Home</li></router-link>
-      <router-link to="/about"><li>About</li></router-link>
-      <router-link to="/skills"><li>Skills</li></router-link>
-      <router-link to="/porfolio"><li>Porfolio</li></router-link>
-      <router-link to="/contact"><li>Contact</li></router-link>
+      
+      <router-link to="/"><li>{{ $t('header.home') }}</li></router-link>
+      <router-link to="/about"><li>{{ $t('header.about') }}</li></router-link>
+      <router-link to="/skills"><li>{{ $t('header.skills') }}</li></router-link>
+      <router-link to="/porfolio"><li>{{ $t('header.porfolio') }}</li></router-link>
+      <router-link to="/contact"><li>{{ $t('header.contact') }}</li></router-link>
+      <TheLangMenu />
     </ul>
   </div>
 
 </template>
 <script setup>
 import { ref, onUnmounted } from 'vue';
+import TheLangMenu from '@/components/languajeMenu.vue';
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n();
 
 function closeMenu() { isMenuShow.value = false; }
 const isMenuShow = ref(false)

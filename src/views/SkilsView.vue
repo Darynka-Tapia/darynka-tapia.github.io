@@ -1,5 +1,5 @@
 <template>
-  <h1 class="section-title">My Skills</h1>
+  <h1 class="section-title">{{ $t('skills.title') }}</h1>
   <div class="skils">
     <span class="chips" v-for="skil in skils" :key="skil">
       {{ skil.name }}
