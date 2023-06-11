@@ -1,5 +1,16 @@
 export const projectsList = [
   {
+    name: 'Catch the rabbit', 
+    description: 'Game',
+    image: 'https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/images/rabbit.png',
+    links: {
+      github: 'https://github.com/Darynka-Tapia/catch-the-rabbit-game', 
+      demo: 'https://catch-the-rabbit.netlify.app/', 
+      figma: ''
+    }, 
+    skills: new Array('HTML', 'CSS', 'JavaScript')
+  },
+  {
     name: 'Porfolio', 
     description: 'Portfolio web',
     image: 'https://raw.githubusercontent.com/Darynka-Tapia/darynka-tapia.github.io/master/src/assets/images/portfolio.png',
@@ -19,7 +30,7 @@ export const projectsList = [
       demo: 'https://todo-list-09.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vue.js', 'Pinia')
+    skills: new Array('HTML', 'CSS', 'JavaScript', 'Vue.js', 'Pinia')
   },
   {
     name: 'Rock, Paper, Scissors', 
@@ -63,7 +74,7 @@ export const projectsList = [
       demo: 'https://old-portfolio-dt.netlify.app/#/calculator', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'CSS grid')
+    skills: new Array('HTML', 'CSS', 'CSS grid', 'JavaScript')
   },
   {
     name: 'Rating project', 
@@ -74,7 +85,7 @@ export const projectsList = [
       demo: 'https://darynka-tapia-frontend-mentor.netlify.app/#/rating', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vue.js')
+    skills: new Array('HTML', 'CSS', 'JavaScript', 'Vue.js')
   },
   {
     name: 'CashFlow', 
@@ -85,7 +96,7 @@ export const projectsList = [
       demo: 'https://cashflow97.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('HTML', 'CSS', 'Vue.js')
+    skills: new Array('HTML', 'CSS', 'JavaScript', 'Vue.js')
   },
   {
     name: 'Mini music player', 
@@ -107,7 +118,7 @@ export const projectsList = [
       demo: 'https://platzi-coins.netlify.app/', 
       figma: ''
     }, 
-    skills: new Array('Vue.js', 'vue-router')
+    skills: new Array('Vue.js', 'vue-router', 'JavaScript')
   },
   {
     name: 'Google clon', 
@@ -140,7 +151,7 @@ export const projectsList = [
       demo: 'https://darynka-tapia.github.io/frontend-architecture/vue__tweeter-clone/', 
       figma: ''
     }, 
-    skills: new Array('mobile first', 'Vue.js', 'HTML', 'CSS')
+    skills: new Array('mobile first', 'JavaScript', 'Vue.js', 'HTML', 'CSS')
   },
   {
     name: 'Profesional blog', 
